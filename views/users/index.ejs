@@ -13,7 +13,8 @@
           </tr>
         </thead>
         <tbody>
-        <% for (var i = 0;  i < data.length ; i++ ){%>
+        <% if  (data.length > 0){ %>
+          <% for (var i = 0;  i < data.length ; i++ ){%>
 
           <tr>
             <td class="mdl-data-table__cell--non-numeric"><%= data[i].nome %></td>
@@ -27,6 +28,14 @@
             </td>
           </tr>
           <%}%>
+        <%}else{%>
+
+          <tr>
+              <td class="td_principal" colspan=3>Não existe professor Cadastrado!</td>
+              
+          </tr>
+
+        <%}%>
 
         </tbody>
       </table>

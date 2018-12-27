@@ -10,7 +10,7 @@
         </div>
         <div class="mdl-card__supporting-text">
   
-          <form action="/users/<%= data.id%>/edit" method="post">
+          <form action="/users/<%= data.id%>/edit" method="post" id="user_edit">
             <div>
               <div class="mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
                 <input name="nome" class="mdl-textfield__input" type="text" id="sample1" value="<%= data.nome%>">
@@ -46,14 +46,14 @@
           <a href="/users/<%= data.id%>/edit" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
             <i class="material-icons">mode_edit</i> Editar
           </a>
-          <a href="/users/<%= data.id%>/remove" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
+          <a href="/users/<%= data.id%>/remove" id ="user_remove" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
             <i class="material-icons">delete_sweep</i> Remover
           </a>
         </div>
-        <div class="mdl-card__menu">
+        <!---<div class="mdl-card__menu">
           <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
             <i class="material-icons">share</i>
-          </button>
+          </button>-->
         </div>
       </div>
     </div>

@@ -10,3 +10,12 @@ table {
 table, .mdl-card, .mdl-textfield {
   width: 100%;
 }
+
+.td_principal{
+  text-align: center !important;
+  font-weight: bold;
+}
+
+.txt-inicial{
+  padding:15px;
+}
