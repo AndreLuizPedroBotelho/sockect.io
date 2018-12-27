@@ -1,3 +1,3 @@
 module.exports = function(io){
-    require('./users');
+    require('./users')(io);
 }
